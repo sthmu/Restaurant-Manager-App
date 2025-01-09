@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team.group3.restaurantmanagementsystem.Controllers.HomepageController">
+   <top>
+      <HBox alignment="CENTER_LEFT" style="-fx-background-color: #7F2200;">
+         <children>
+            <Pane>
+               <children>
+                  <Label layoutY="11.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-alignment: center;" text="Restaurant Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Semibold" size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+               <image>
+                  <Image url="@assets/usericon.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" text="Username" textFill="WHITE" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="17.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TilePane hgap="10.0" vgap="10.0">
+               <children>
+                  <StackPane onMouseClicked="#orderManageBtnClk" fx:id="orderMngBtn" prefHeight="150.0" prefWidth="324.0" style="-fx-border-radius: 20; -fx-background-color: #E5D0AC; -fx-background-radius: 20; -fx-border-color: #A31D1D; -fx-border-width: 1px; -fx-padding: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);">
+                     <HBox prefHeight="100.0" prefWidth="200.0">
+                        <children>
+                           <ImageView fitHeight="110.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@assets/ordericon.png" />
+                              </image>                     </ImageView>
+                           <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                              <children>
+                                 <Label text="Order Management">
+                                    <font>
+                                       <Font name="Yu Gothic UI Semibold" size="16.0" />
+                                    </font>
+                                 </Label>
+                                 <Label prefHeight="35.0" prefWidth="157.0" text="Manage processes related to Orders" wrapText="true" />
+                              </children>
+                              <HBox.margin>
+                                 <Insets left="20.0" top="10.0" />
+                              </HBox.margin>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <TilePane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </TilePane.margin>
+                  </StackPane>
+                  <StackPane fx:id="InventoryMngBtn" prefHeight="150.0" prefWidth="324.0" style="-fx-border-radius: 20; -fx-background-color: #E5D0AC; -fx-background-radius: 20; -fx-border-color: #A31D1D; -fx-border-width: 1px; -fx-padding: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/inventoryIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Inventory Management">
+                                       <font>
+                                          <Font name="Yu Gothic UI Semibold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="35.0" prefWidth="157.0" text="Manage processes related to Orders" wrapText="true" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <TilePane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </TilePane.margin>
+                  </StackPane>
+                  <StackPane fx:id="staffMngBtn" prefHeight="150.0" prefWidth="324.0" style="-fx-border-radius: 20; -fx-background-color: #E5D0AC; -fx-background-radius: 20; -fx-border-color: #A31D1D; -fx-border-width: 1px; -fx-padding: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/staffIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Staff Management">
+                                       <font>
+                                          <Font name="Yu Gothic UI Semibold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="35.0" prefWidth="157.0" text="Manage processes related to Orders" wrapText="true" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <TilePane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </TilePane.margin>
+                  </StackPane>
+                  <StackPane fx:id="menuMngBtn" prefHeight="150.0" prefWidth="324.0" style="-fx-border-radius: 20; -fx-background-color: #E5D0AC; -fx-background-radius: 20; -fx-border-color: #A31D1D; -fx-border-width: 1px; -fx-padding: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="110.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/foodmenuIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Menu Management">
+                                       <font>
+                                          <Font name="Yu Gothic UI Semibold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="35.0" prefWidth="157.0" text="Manage processes related to Orders" wrapText="true" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <TilePane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </TilePane.margin>
+                  </StackPane>
+
+               </children>
+            </TilePane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

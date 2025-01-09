@@ -1,0 +1,22 @@
+
+.tab-label {
+    -fx-text-fill: white ;
+}
+
+.text-white{
+    -fx-text-fill: #FEF9E1;
+}
+
+.bg-maroon{
+    -fx-background-color:#6D2323;
+}
+
+.scrollpane-bg-maroon > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scrollpane-bg-maroon {
+    -fx-background-color: #6D2323;
+}
+
+.jfx-tab-pane .headers-region { -fx-background-color: #35464F; }
