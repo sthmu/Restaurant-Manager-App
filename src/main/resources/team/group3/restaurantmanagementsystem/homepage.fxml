@@ -148,7 +148,7 @@
                         <Insets left="10.0" top="10.0" />
                      </TilePane.margin>
                   </StackPane>
-                  <StackPane fx:id="menuMngBtn" prefHeight="150.0" prefWidth="324.0" style="-fx-border-radius: 20; -fx-background-color: #E5D0AC; -fx-background-radius: 20; -fx-border-color: #A31D1D; -fx-border-width: 1px; -fx-padding: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);">
+                  <StackPane onMouseClicked="#menuManageBtnClk" fx:id="menuMngBtn" prefHeight="150.0" prefWidth="324.0" style="-fx-border-radius: 20; -fx-background-color: #E5D0AC; -fx-background-radius: 20; -fx-border-color: #A31D1D; -fx-border-width: 1px; -fx-padding: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2);">
                      <children>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>

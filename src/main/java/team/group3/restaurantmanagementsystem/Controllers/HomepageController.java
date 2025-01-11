@@ -33,4 +33,16 @@ public class HomepageController {
             }
         }
     }
+
+    public void menuManageBtnClk(MouseEvent mouseEvent) {
+        if(stage!=null){
+            try{
+                FXMLLoader root =new FXMLLoader(getClass().getResource("/team/group3/restaurantmanagementsystem/menuManage.fxml"));
+                stage.setScene(new Scene(root.load()));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
