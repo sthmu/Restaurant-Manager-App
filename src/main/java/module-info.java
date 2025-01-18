@@ -9,6 +9,7 @@ module team.group3.restaurantmanagementsystem {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens team.group3.restaurantmanagementsystem to javafx.fxml;
     exports team.group3.restaurantmanagementsystem;
