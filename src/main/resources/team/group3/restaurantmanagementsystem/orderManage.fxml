@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<TabPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@assets/styles/main.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@assets/styles/main.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team.group3.restaurantmanagementsystem.Controllers.OrderMngController">
   <tabs>
     <Tab styleClass="bg-maroon" text="Place Order">
          <content>
@@ -25,7 +25,7 @@
               <content>
                 <AnchorPane styleClass="bg-maroon" stylesheets="@assets/styles/main.css">
                      <children>
-                        <VBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                        <VBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <children>
                               <HBox>
                                  <children>
@@ -36,6 +36,9 @@
                                        </HBox.margin>
                                     </Label>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
                               </HBox>
                               <VBox fillWidth="false">
                                  <children>
@@ -47,19 +50,42 @@
                                     <HBox>
                                        <children>
                                           <Pane HBox.hgrow="ALWAYS" />
-                                          <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="86.0" styleClass="text-white" text="Dine in">
+                                          <RadioButton fx:id="dineInCheckBtn" mnemonicParsing="false" prefHeight="17.0" prefWidth="86.0" styleClass="text-white" text="Dine in">
                                              <toggleGroup>
                                                 <ToggleGroup fx:id="orderType" />
                                              </toggleGroup>
                                           </RadioButton>
                                           <Pane HBox.hgrow="ALWAYS" />
-                                          <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" styleClass="text-white" text="Takeaway" toggleGroup="$orderType" />
+                                          <RadioButton fx:id="takeawayCheckBtn" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" styleClass="text-white" text="Takeaway" toggleGroup="$orderType" />
                                           <Pane HBox.hgrow="ALWAYS" />
-                                          <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="114.0" styleClass="text-white" text="Delivery" toggleGroup="$orderType" />
+                                          <RadioButton fx:id="deliveryCheckBtn" mnemonicParsing="false" prefHeight="17.0" prefWidth="114.0" styleClass="text-white" text="Delivery" toggleGroup="$orderType" />
                                        </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
                                     </HBox>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
                               </VBox>
+                              <HBox>
+                                 <children>
+                                    <Label styleClass="text-white" text="Menu Item">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#chooseitemBtnOnPress" text="Choose">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
                            </children>
                         </VBox>
                      </children>
