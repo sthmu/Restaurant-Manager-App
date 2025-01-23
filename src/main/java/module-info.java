@@ -16,4 +16,6 @@ module team.group3.restaurantmanagementsystem {
 
     opens team.group3.restaurantmanagementsystem.Controllers to javafx.fxml;
     exports team.group3.restaurantmanagementsystem.Controllers;
+    exports team.group3.restaurantmanagementsystem.Database;
+    opens team.group3.restaurantmanagementsystem.Database to javafx.fxml;
 }

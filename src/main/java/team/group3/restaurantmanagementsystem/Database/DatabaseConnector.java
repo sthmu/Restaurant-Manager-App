@@ -1,4 +1,4 @@
-package team.group3.restaurantmanagementsystem;
+package team.group3.restaurantmanagementsystem.Database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
